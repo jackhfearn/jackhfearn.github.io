@@ -1,144 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-  <title>Oops...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jack Fearn CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+  <script src="https://kit.fontawesome.com/b33f6bbacd.js" crossorigin="anonymous"></script>
   <style>
-    *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-body{
-    background-color: #ffb000;
-}
-.container{
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: auto;
-    margin-bottom:auto ;
-}
-.card{
-    background-color: #ffb000;
-    margin-top: 100px;
-    position: relative;  
-
-}
-.star{
-    position: absolute;
-}
-.star img{
-    width: 100%;
-}
-
-.top{
-    left: 37px;
-    top: -71px;
-    width: 300px;
-}
-.top-rg{
-    right: 37px;
-    width: 83px;
-    top: -71px
-
-}
-.bottom-lf{
-    bottom: -160px;
-    width: 300px;
-    left: 37px;
-}
-.bottom-rg{
-    right: 37px;
-    bottom: -160px;
-    width: 83px;
-
-}
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.error{
-    z-index: 1;
-    position: relative;
-}
-
-.error span{
-    font-size: 90px;
-    color: #150035;
-    font-weight: 900;
-    white-space: pre-line;
-    line-height: 1;
-    letter-spacing: 3px;
-    text-shadow: 1px 7px 1px #fff;
-}
-.error p{
-    color: #fff;
-    white-space: pre-line;
-    padding-top: 25px;
-    font-size: 15px;
-    line-height: 1.3;
-}
-
-.img img{
-    width: 570px;
-}
-button{
-    width: 100px;
-    padding: 8px;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 25px;
-    border: none;
-    background-color:#150035 ;
-    color:#ffb000 ;
-    position: relative;
-   
-}
-button::after{
-    content: '';
-    width: 96px;
-    height: 35px;
-    border: 3px solid #fff;
-    position: absolute;
-    top: 7px;
-    left: 5px;
-    z-index: -1;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+    p, li {
+      font-size: 1rem;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+    section {
+      margin-bottom: 1.5rem;
+    }
+    .contact-info {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .experience-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      background: #fff;
+    }
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f1f1f1;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .experience-body {
+      display: none;
+      padding: 1rem;
+      transition: all 0.3s ease-in-out;
+    }
+    .experience-body ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .icon {
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+    .expanded .icon {
+      transform: rotate(90deg);
+    }
   </style>
-
 </head>
 <body>
-  <div class="card">
-    <div class="star top">
-      <img src="https://svgshare.com/i/YdG.svg">
-    </div>
-    <div class="star top-rg">
-      <img src="https://svgshare.com/i/Ydc.svg">
-    </div>
-    <div class="star bottom-lf">
-      <img src="https://svgshare.com/i/YdG.svg">
-    </div>
-    <div class="star bottom-rg">
-      <img src="https://svgshare.com/i/Ydo.svg">
-    </div>
-    <div class="container flex">
-      <div class="error">
-        <span>404
-          error
-        </span>
-        <p>Oops! Looks like that page is no longer working.</p>
-        <p>Please come back later.</p>
-        <!-- <button>more</button> -->
+  <p style="font-size:x-small;">Last updated: 15/07/2025</p>
+  <header>
+    <h1>JACK FEARN</h1>
+    <p class="contact-info"><a href="https://www.linkedin.com/in/jackfearn" target="_blank">linkedin.com/in/jackfearn</a></p>
+    <p>London, UK</p>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Experienced arts administrator and creative producer with eight years’ experience in the UK music and education sectors, including professional orchestras, conservatoires, and participatory arts charities. Proven track record in project delivery, operational systems, artist development, and inclusive and accessible practices. Adept at managing multi-stakeholder events in outreach and public-facing settings, budgeting, and evaluation processes, with a strong grounding in database systems and digital tools. Skilled communicator with a collaborative, detail-driven approach, seeking an operational role in a values-led organisation where I can apply my experience to support the wider sector.
+    </section>
+
+  <section>
+    <h2>Core Skills</h2>
+    <ul>
+      <li>Project and Event Management – End-to-end delivery of arts education projects, training and recruitment programmes, large-scale live events, and outreach programmes</li>
+      <li>EDI and Access Development – Implementing inclusive recruitment and working practices</li>
+      <li>Communications and Stakeholder Engagement – Artist liaison, audience development, safeguarding, public comms</li>
+      <li>Monitoring and Evaluation – Data collection, funding reports, CRM & system-based admin</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Software/Technical Skills</h2>
+    <ul>
+      <li>Office: Microsoft 365 (Word, Excel, PowerPoint, Planner etc.), Google Workspace</li>
+      <li>CRM/Admin: Raiser’s Edge, Tessitura, Backstage, CelCat, SIMS</li>
+      <li>Marketing Tools: WordPress, Canva, Mailchimp, SurveyMonkey</li>
+      <li>Some experience in programming and data analytics, as well as music/video production software</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Key Achievements</h2>
+    <ul>
+      <li>Recruited and onboarded over 60 freelance musicians across the UK, expanding Live Music Now’s artist pool by 20%</li>
+      <li>Managed a £100,000 Arts Council England grant for recruitment, accessibility and diversity development</li>
+      <li>Led a digital-learning curriculum transition, video broadcast concert and online exam season for 400+ students at Junior Trinity</li>
+      <li>Coordinated multi-school outreach projects with the Hallé, collaborating with several major sponsors and more than 15 local authorities</li>
+      <li>Directed multi-camera broadcasts of schools concerts reaching 20,000+ young people annually, combining artistic and technical production</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <div class="experience-item">
+      <div class="experience-header" onclick="toggleExperience(this)">
+        <span>Live Music Now | Project Coordinator</span>
+        <span>Sept 2023 – March 2025 <span class="icon tab-icon fa fa-chevron-right"></span></span>
       </div>
-      <div class="img">
-        <img src="https://svgshare.com/i/Ye7.svg">
+      <div class="experience-body">
+        <ul>
+          <li>Led national recruitment, training and development for new artists. Provided tailored guidance and support to new artists entering participatory arts work, helping them navigate SEN, healthcare, and intergenerational settings with confidence and creativity.</li>
+          <li>Advocate for the current workforce regarding development and fair fees in line with MU rises.</li>
+          <li>Delivered CPD workshops with guest speakers and partners looking at wellbeing and artistic practice.</li>
+          <li>Supported northeast regional delivery and national Music in Health portfolio, coordinating artist bookings, venue logistics and project planning for a wide range of settings including care homes, SEN/SEMH schools, hospitals, and arts venues.</li>
+          <li>Budget management of Arts Council grant (£100k) for recruitment work, alongside the Executive Director.</li>
+          <li>Website, social media, database, and policy input on diversity and accessibility.</li>
+        </ul>
       </div>
     </div>
-  </div>
+
+    <div class="experience-item">
+      <div class="experience-header" onclick="toggleExperience(this)">
+        <span>City of London Academy | MIS/Data Officer</span>
+        <span>Jan 2023 – July 2023 <span class="icon tab-icon fa fa-chevron-right"></span></span>
+      </div>
+      <div class="experience-body">
+        <ul>
+          <li>Data analysis and Management Information Systems support.</li>
+          <li>Pastoral and student welfare support.</li>
+          <li>Exam operations and invigilation of satellite campus.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header" onclick="toggleExperience(this)">
+        <span>Southbank Sinfonia | Orchestra & Projects Manager</span>
+        <span>Aug 2022 – Nov 2022 <span class="icon tab-icon fa fa-chevron-right"></span></span>
+      </div>
+      <div class="experience-body">
+        <ul>
+          <li>Orchestra Management – Primary contact for the orchestra personnel (33 fixed plus additional freelancers), managing itineraries, auditions, leave and unscheduled absences, fixing deputy and extra players for projects.</li>
+          <li>Concert and Rehearsal Management – Delivery of rehearsals and concerts (2-3 events per week), production of technical and stage requirements, artist liaison and scheduling, responsibility for health and safety.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header" onclick="toggleExperience(this)">
+        <span>Trinity Laban | Junior Trinity Admin</span>
+        <span>March 2020 – July 2022 <span class="icon tab-icon fa fa-chevron-right"></span></span>
+      </div>
+      <div class="experience-body">
+        <ul>
+          <li>Oversaw weekly delivery of 11–19 teaching programme.</li>
+          <li>Supported 100+ freelance staff and 400 students including younger programmes.</li>
+          <li>Administered all aspects of Junior Trinity operations, including safeguarding compliance (DBS/BOPA), exam scheduling and entries, termly concert production, and payroll for over 100 freelance staff.</li>
+          <li>Led the centre-wide transition to online teaching during the COVID-19 pandemic; delivered bespoke training for 80+ tutors, introduced new digital systems and coordinated hybrid exam sessions.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header" onclick="toggleExperience(this)">
+        <span>Hallé Concerts Society | Education Assistant</span>
+        <span>April 2017 – March 2020 <span class="icon tab-icon fa fa-chevron-right"></span></span>
+      </div>
+      <div class="experience-body">
+        <ul>
+        <li>Produced schools and higher education projects, liaising with partner schools and sponsors.</li>
+        <li>Supported wider department events accessed by more than 65,000 participants annually.</li>
+        <li>Designed and piloted new off-the-shelf education workshop packages, aligned with national curriculum goals, enabling consistent delivery and access to programmes for primary/secondary schools in Greater Manchester.</li>
+        <li>Directed technical production for digital and interactive school concerts, managing student film crews, live animations, presentations, and technical setup.</li>
+        <li>Served as pastoral staff and chaperone on youth orchestra concerts and tours in the UK and abroad.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Volunteering</h2>
+    <ul>
+      <li>Catbytes Digital Community | Digital Buddy (2023–2025)</li>
+      <li>LOCOG | London Olympic Games Maker (2012)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education & Certifications</h2>
+    <p><strong>University of Manchester</strong> – MusB (Hons) Music – First Class Honours (2012–2015)</p>
+    <br>
+    <p><strong>Certificates/licenses:</strong></p>
+      <li>Enhanced DBS (children and vulnerable adults, on update service).</li>
+      <li>Safeguarding training (most recent March 2025: NSPCC ‘Protecting children in entertainment’).</li>
+      <li>Full UK driving licence.</li>
+
+    <br>
+    <p><strong>Professional Development:</strong></p>
+    <ul>
+      <li>Delivered digital teaching training sessions to 80+ staff during pandemic curriculum transition (Trinity Laban)</li>
+      <li>Developed accessible recruitment processes and advised on diversity/inclusion policies (Live Music Now)</li>
+      <li>Hosted CPD sessions on artist wellbeing and inclusive practice: SEN/SEMH engagement, dementia-friendly work (Live Music Now).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Interests & Projects</h2>
+    <ul>
+      <li>Collaborative music-making, performing and arranging music for orchestras and big bands.</li>
+      <li>Digital accessibility advocate – supporting older adults with technology as part of Catbytes.</li>
+      <li>Self-led learning in digital tools, data and design (websites, analytics, multimedia).</li>
+    </ul>
+  </section>
+
+  <script>
+    function toggleExperience(header) {
+      const item = header.parentElement;
+      const body = header.nextElementSibling;
+      const icon = header.querySelector('.icon');
+
+      const isOpen = item.classList.contains('expanded');
+
+      document.querySelectorAll('.experience-item').forEach(el => {
+        el.classList.remove('expanded');
+        el.querySelector('.experience-body').style.display = 'none';
+      });
+
+      if (!isOpen) {
+        item.classList.add('expanded');
+        body.style.display = 'block';
+      }
+    }
+  </script>
+
 </body>
 </html>
